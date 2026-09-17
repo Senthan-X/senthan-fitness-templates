@@ -18,7 +18,7 @@ The root page is the collection gateway and links to every live template.
 ## Collection 2 — Expansion
 
 1. **KINTU ATHLETIC CLUB** — premium full-service fitness club (live)
-2. Personal trainer and coaching business
+2. **AXIS / ONE** — personal trainer and coaching business (live)
 3. Group-training and HIIT studio
 4. Fitness, nutrition and habit coaching
 5. Boutique women's fitness studio
@@ -40,7 +40,8 @@ senthan-fitness-templates/
 ├── stillwater-index.html      <- Collection 1 / yoga and wellness
 ├── barworks-index.html        <- Collection 1 / strength and powerlifting
 ├── paceline-index.html        <- Collection 1 / running and endurance
-└── collection-2-kintu-index.html <- Collection 2 / premium fitness club
+├── collection-2-kintu-index.html <- Collection 2 / premium fitness club
+└── collection-2-axis-one-index.html <- Collection 2 / personal coaching
 ```
 
 Each `index.html` is a complete, standalone site — HTML, CSS, JS, images
@@ -89,6 +90,17 @@ recovery, coaching, class schedules and three membership tiers. It uses ten
 distinct images from the dedicated `Fitness and Gym.zip` source pack and
 includes responsive layouts, light/dark modes, seven languages with Arabic
 RTL, defensive local preferences, scroll reveals and a Back-to-Top Button.
+
+### AXIS / ONE — Personal Coaching
+Collection 2's second template. A cobalt, coral and mineral editorial identity
+for a Kampala-based one-to-one coaching business. The site covers assessment,
+private and partner coaching, hybrid programming, nutrition and habits, three
+transparent coaching plans and fictional Ugandan contact details. Its signature
+interactive focus planner generates a sample training week from the visitor's
+primary goal. Ten fresh archive images are embedded as WebP and do not overlap
+the KINTU image set. The template also includes responsive light/dark modes,
+seven languages with Arabic RTL, defensive local preferences, scroll reveals
+and a Back-to-Top Button.
 
 ---
 
