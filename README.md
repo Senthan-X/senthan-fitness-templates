@@ -1,21 +1,32 @@
-# Senthan & Co — Fitness Template Collection
+# Senthan & Co — Fitness & Gym Collections
 
-Four fitness website templates sharing one build system: dark/light theming,
-7-language support, and fully self-contained HTML with no frameworks, no build
-step, and no external image folders.
+One repository for two distinct Fitness & Gym collections. Collection 1 contains
+four established templates. Collection 2 expands the category into seven new
+business models using the dedicated `Fitness and Gym.zip` source pack.
 
-**Live demos (once deployed to GitHub Pages):**
+## Collection 1 — Foundations (live)
 
 | Template | Niche | Demo URL |
 |---|---|---|
-| **IRONYARD** | CrossFit / Functional Training | `https://<username>.github.io/<repo>/ironyard/` |
-| **STILLWATER** | Yoga & Wellness Studio | `https://<username>.github.io/<repo>/stillwater/` |
-| **BARWORKS** | Strength & Powerlifting Gym | `https://<username>.github.io/<repo>/barworks/` |
-| **PACELINE** | Running & Endurance Club | `https://<username>.github.io/<repo>/paceline/` |
+| **IRONYARD** | CrossFit / Functional Training | `ironyard-index.html` |
+| **STILLWATER** | Yoga & Wellness Studio | `stillwater-index.html` |
+| **BARWORKS** | Strength & Powerlifting Gym | `barworks-index.html` |
+| **PACELINE** | Running & Endurance Club | `paceline-index.html` |
 
-Replace `<username>` and `<repo>` with your GitHub username and this
-repository's name once it's live. The root page (`/`) is a landing page that
-links to all four.
+The root page is the collection gateway and links to every live template.
+
+## Collection 2 — Expansion (in development)
+
+1. Premium full-service fitness club
+2. Personal trainer and coaching business
+3. Group-training and HIIT studio
+4. Fitness, nutrition and habit coaching
+5. Boutique women's fitness studio
+6. Recovery and athletic-performance facility
+7. Everyday fitness and lifestyle brand
+
+These directions deliberately fill gaps left by Collection 1. They are not
+replacement versions of IRONYARD, STILLWATER, BARWORKS or PACELINE.
 
 ---
 
@@ -23,16 +34,12 @@ links to all four.
 
 ```
 senthan-fitness-templates/
-├── index.html          <- landing page linking to all 4 demos
-├── README.md            <- this file
-├── ironyard/
-│   └── index.html       <- CrossFit template (self-contained)
-├── stillwater/
-│   └── index.html       <- Yoga template (self-contained)
-├── barworks/
-│   └── index.html       <- Strength template (self-contained)
-└── paceline/
-    └── index.html       <- Running template (self-contained)
+├── index.html                 <- collection gateway
+├── README.md                  <- this file
+├── ironyard-index.html        <- Collection 1 / functional training
+├── stillwater-index.html      <- Collection 1 / yoga and wellness
+├── barworks-index.html        <- Collection 1 / strength and powerlifting
+└── paceline-index.html        <- Collection 1 / running and endurance
 ```
 
 Each `index.html` is a complete, standalone site — HTML, CSS, JS, images
@@ -113,11 +120,8 @@ and folder to `/ (root)`. GitHub will publish the site at
 
 1. Create a new repository on GitHub (github.com/new).
 2. On the repo page, choose "uploading an existing file."
-3. Drag in `index.html` and `README.md` at the root, then create each of the
-   four folders (`ironyard`, `stillwater`, `barworks`, `paceline`) by typing
-   the folder name followed by `/` before the filename in the upload box
-   (e.g. `ironyard/index.html`), and upload each template's `index.html` into
-   its matching folder.
+3. Upload `index.html`, `README.md`, and each self-contained template HTML file
+   at the repository root.
 4. Commit directly to `main`.
 5. Go to Settings → Pages, set source to `main` / `/ (root)`, save.
 
@@ -128,12 +132,11 @@ subsequent updates are usually live within seconds to a minute.
 
 ## 5. UPDATING A TEMPLATE LATER
 
-Each template is one file. To update IRONYARD, for example, just replace
-`ironyard/index.html` with a new version (same filename) and push/upload
-again — no other files need to change.
+Each template is one file. To update IRONYARD, for example, replace
+`ironyard-index.html` and push again — no other template file needs to change.
 
 ---
 
 ## Credits
 
-Built by **Senthan & Co** — jonathanrivers0414@gmail.com · +256 754069314
+Built by **Senthan & Co**.
