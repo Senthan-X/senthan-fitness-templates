@@ -19,7 +19,7 @@ The root page is the collection gateway and links to every live template.
 
 1. **KINTU ATHLETIC CLUB** — premium full-service fitness club (live)
 2. **AXIS / ONE** — personal trainer and coaching business (live)
-3. Group-training and HIIT studio
+3. **AMP / HOUSE** — group-training and HIIT studio (live)
 4. Fitness, nutrition and habit coaching
 5. Boutique women's fitness studio
 6. Recovery and athletic-performance facility
@@ -41,7 +41,8 @@ senthan-fitness-templates/
 ├── barworks-index.html        <- Collection 1 / strength and powerlifting
 ├── paceline-index.html        <- Collection 1 / running and endurance
 ├── collection-2-kintu-index.html <- Collection 2 / premium fitness club
-└── collection-2-axis-one-index.html <- Collection 2 / personal coaching
+├── collection-2-axis-one-index.html <- Collection 2 / personal coaching
+└── collection-2-amp-house-index.html <- Collection 2 / group training studio
 ```
 
 Each `index.html` is a complete, standalone site — HTML, CSS, JS, images
@@ -101,6 +102,17 @@ primary goal. Ten fresh archive images are embedded as WebP and do not overlap
 the KINTU image set. The template also includes responsive light/dark modes,
 seven languages with Arabic RTL, defensive local preferences, scroll reveals
 and a Back-to-Top Button.
+
+### AMP / HOUSE — Group Training & HIIT Studio
+Collection 2's third template. A high-volume magenta, acid-lime and mineral
+identity for a Kampala rhythm-and-circuit studio. It presents three class
+formats, a weekly timetable and three transparent pass options, plus a
+signature class mixer that recommends a session from the visitor's preferred
+duration and energy. Nine fresh archive images are embedded as WebP and do not
+overlap the KINTU or AXIS / ONE image sets. The template also includes
+responsive light/dark modes, seven languages with Arabic RTL, fictional
+Ugandan contact details, defensive local preferences, scroll reveals and a
+Back-to-Top Button.
 
 ---
 
