@@ -4,11 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Senthan &amp; Co — Fitness Template Collection</title>
-<meta name="description" content="Four fitness website templates by Senthan & Co: CrossFit, Yoga, Strength, and Running. Dark/light themes, 7 languages, fully responsive.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="Two distinct Fitness & Gym website-template collections by Senthan & Co, covering training, wellness, coaching, recovery, nutrition and lifestyle fitness.">
 
 <style>
 :root{
@@ -23,8 +19,8 @@
   --barworks:#B04A4A;
   --paceline:#4C7A8C;
 
-  --font-display:"Archivo", ui-sans-serif, system-ui, sans-serif;
-  --font-body:"Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display:Impact, Haettenschweiler, "Arial Narrow Bold", ui-sans-serif, system-ui, sans-serif;
+  --font-body:Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 body{
@@ -50,6 +46,17 @@ a{color:inherit;}
   display:grid;grid-template-columns:1fr;gap:28px;
   padding-block:56px;
 }
+.collection-head{padding-top:56px;display:grid;gap:10px;max-width:760px;}
+.collection-head + .grid{padding-top:26px;}
+.collection-kicker{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#9fca65;font-weight:700;}
+.collection-head h2{font-size:clamp(27px,4vw,40px);}
+.collection-head p{color:var(--text-muted);}
+.roadmap{display:grid;grid-template-columns:1fr;gap:12px;padding:26px 0 56px;}
+@media(min-width:760px){.roadmap{grid-template-columns:repeat(2,1fr);}}
+.roadmap article{border:1px solid var(--border);border-radius:10px;padding:20px;background:linear-gradient(145deg,rgba(159,202,101,.08),transparent 65%);}
+.roadmap span{font-size:11px;color:#9fca65;text-transform:uppercase;letter-spacing:.1em;font-weight:700;}
+.roadmap h3{font-size:19px;margin:8px 0 6px;}
+.roadmap p{font-size:13.5px;color:var(--text-muted);}
 @media(min-width:760px){.grid{grid-template-columns:repeat(2,1fr);}}
 
 .card{
@@ -108,12 +115,18 @@ a{color:inherit;}
 
 <header class="hero container">
   <span class="eyebrow">Senthan &amp; Co — Template Collection</span>
-  <h1>Four fitness sites, one shared build system.</h1>
-  <p>Dark/light theming, 7-language support, and fully self-contained HTML — no
-  frameworks, no build step. Each template below is a live, working demo.</p>
+  <h1>One fitness category. Two distinct collections.</h1>
+  <p>Collection 1 preserves four established training identities. Collection 2
+  expands into the commercial and coaching gaps, using a dedicated 90-image source pack.</p>
 </header>
 
 <main class="container">
+  <section class="collection-head">
+    <span class="collection-kicker">Collection 1 · Live</span>
+    <h2>Foundations</h2>
+    <p>Four focused templates for functional training, yoga and wellness,
+    strength and powerlifting, and running and endurance.</p>
+  </section>
   <div class="grid">
 
     <div class="card ironyard">
@@ -194,6 +207,22 @@ a{color:inherit;}
 
   </div>
 
+  <section class="collection-head">
+    <span class="collection-kicker">Collection 2 · In development</span>
+    <h2>The next seven</h2>
+    <p>Purposefully designed around gaps in Collection 1 so each new template
+    adds a different sellable business model instead of repeating an existing niche.</p>
+  </section>
+  <div class="roadmap">
+    <article><span>01 · First build</span><h3>Premium Fitness Club</h3><p>Full-service membership, facilities, class schedules and trainer discovery.</p></article>
+    <article><span>02</span><h3>Personal Coaching</h3><p>Trainer-led programs, consultations, transformations and online coaching.</p></article>
+    <article><span>03</span><h3>Group Training Studio</h3><p>High-energy classes, community challenges and schedule-led conversion.</p></article>
+    <article><span>04</span><h3>Fitness + Nutrition</h3><p>Training, meal strategy, habit coaching and sustainable wellness programs.</p></article>
+    <article><span>05</span><h3>Boutique Women’s Fitness</h3><p>A confident, editorial studio experience with programs and community at its core.</p></article>
+    <article><span>06</span><h3>Recovery + Performance</h3><p>Mobility, recovery services, testing and performance support for active clients.</p></article>
+    <article><span>07</span><h3>Everyday Fitness Lifestyle</h3><p>An approachable multipurpose concept spanning movement, wellness and consistency.</p></article>
+  </div>
+
   <div class="notice">
     <strong>Image licensing note:</strong> photography in these demos is for
     preview purposes only and is not included or licensed for redistribution.
@@ -203,7 +232,7 @@ a{color:inherit;}
 
 <footer class="footer container">
   <span>© 2026 Senthan &amp; Co. All rights reserved.</span>
-  <span>jonathanrivers0414@gmail.com · +256 754069314</span>
+  <span>Fitness &amp; Gym · Portfolio collection</span>
 </footer>
 
 </body>
