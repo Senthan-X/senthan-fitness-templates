@@ -15,9 +15,9 @@ business models using the dedicated `Fitness and Gym.zip` source pack.
 
 The root page is the collection gateway and links to every live template.
 
-## Collection 2 — Expansion (in development)
+## Collection 2 — Expansion
 
-1. Premium full-service fitness club
+1. **KINTU ATHLETIC CLUB** — premium full-service fitness club (live)
 2. Personal trainer and coaching business
 3. Group-training and HIIT studio
 4. Fitness, nutrition and habit coaching
@@ -39,7 +39,8 @@ senthan-fitness-templates/
 ├── ironyard-index.html        <- Collection 1 / functional training
 ├── stillwater-index.html      <- Collection 1 / yoga and wellness
 ├── barworks-index.html        <- Collection 1 / strength and powerlifting
-└── paceline-index.html        <- Collection 1 / running and endurance
+├── paceline-index.html        <- Collection 1 / running and endurance
+└── collection-2-kintu-index.html <- Collection 2 / premium fitness club
 ```
 
 Each `index.html` is a complete, standalone site — HTML, CSS, JS, images
@@ -80,6 +81,14 @@ Portuguese, Chinese Simplified — 79/79 translation keys verified per
 template), fully responsive layout, scroll-reveal animations, and CSS
 custom-property theming that lets you re-color an entire site by changing
 one variable.
+
+### KINTU ATHLETIC CLUB — Premium Full-Service Fitness Club
+Collection 2's first template. Mineral-black, rust and electric-lime art
+direction for a Kampala club combining strength, conditioning, mobility,
+recovery, coaching, class schedules and three membership tiers. It uses ten
+distinct images from the dedicated `Fitness and Gym.zip` source pack and
+includes responsive layouts, light/dark modes, seven languages with Arabic
+RTL, defensive local preferences, scroll reveals and a Back-to-Top Button.
 
 ---
 
