@@ -20,7 +20,7 @@ The root page is the collection gateway and links to every live template.
 1. **KINTU ATHLETIC CLUB** — premium full-service fitness club (live)
 2. **AXIS / ONE** — personal trainer and coaching business (live)
 3. **AMP / HOUSE** — group-training and HIIT studio (live)
-4. Fitness, nutrition and habit coaching
+4. **FORM / DAILY** — fitness, nutrition and habit coaching (live)
 5. Boutique women's fitness studio
 6. Recovery and athletic-performance facility
 7. Everyday fitness and lifestyle brand
@@ -42,7 +42,8 @@ senthan-fitness-templates/
 ├── paceline-index.html        <- Collection 1 / running and endurance
 ├── collection-2-kintu-index.html <- Collection 2 / premium fitness club
 ├── collection-2-axis-one-index.html <- Collection 2 / personal coaching
-└── collection-2-amp-house-index.html <- Collection 2 / group training studio
+├── collection-2-amp-house-index.html <- Collection 2 / group training studio
+└── collection-2-form-daily-index.html <- Collection 2 / nutrition and habit coaching
 ```
 
 Each `index.html` is a complete, standalone site — HTML, CSS, JS, images
@@ -113,6 +114,16 @@ overlap the KINTU or AXIS / ONE image sets. The template also includes
 responsive light/dark modes, seven languages with Arabic RTL, fictional
 Ugandan contact details, defensive local preferences, scroll reveals and a
 Back-to-Top Button.
+
+### FORM / DAILY — Fitness, Nutrition & Habit Coaching
+Collection 2's fourth template. An editorial ivory, ink, tangerine and aqua
+identity for a Kampala coaching practice connecting practical movement, flexible
+nutrition and repeatable habits. Its signature Habit Lab builds a seven-day
+starter rhythm from the visitor's focus, available training days and session
+length. Seven source-pack images are embedded as WebP and are new to Collection
+2; some were previously used in Collection 1. The template includes responsive
+light/dark modes, eight languages including Swahili and Arabic RTL, fictional Ugandan contact
+details, defensive local preferences, scroll reveals and a Back-to-Top Button.
 
 ---
 
