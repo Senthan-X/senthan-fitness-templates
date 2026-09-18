@@ -21,7 +21,7 @@ The root page is the collection gateway and links to every live template.
 2. **AXIS / ONE** — personal trainer and coaching business (live)
 3. **AMP / HOUSE** — group-training and HIIT studio (live)
 4. **FORM / DAILY** — fitness, nutrition and habit coaching (live)
-5. Boutique women's fitness studio
+5. **IMARA / STUDIO** — boutique women's strength and movement studio (live)
 6. Recovery and athletic-performance facility
 7. Everyday fitness and lifestyle brand
 
@@ -43,12 +43,15 @@ senthan-fitness-templates/
 ├── collection-2-kintu-index.html <- Collection 2 / premium fitness club
 ├── collection-2-axis-one-index.html <- Collection 2 / personal coaching
 ├── collection-2-amp-house-index.html <- Collection 2 / group training studio
-└── collection-2-form-daily-index.html <- Collection 2 / nutrition and habit coaching
+├── collection-2-form-daily-index.html <- Collection 2 / nutrition and habit coaching
+└── collection-2-imara-studio-index.html <- Collection 2 / boutique women's fitness
 ```
 
-Each `index.html` is a complete, standalone site — HTML, CSS, JS, images
-(base64-embedded), and all 7 language translations in one file. Nothing else
-needs to be uploaded for any individual template to work.
+Each template is a complete, standalone site — HTML, CSS, JS, images
+(base64-embedded), and its full language set in one file. Collection 2 uses the
+updated eight-language workflow from FORM / DAILY onward, adding Swahili to
+English, Spanish, French, German, Portuguese, Arabic and Chinese. Nothing else
+needs to be uploaded for an individual template to work.
 
 ---
 
@@ -125,11 +128,23 @@ length. Seven source-pack images are embedded as WebP and are new to Collection
 light/dark modes, eight languages including Swahili and Arabic RTL, fictional Ugandan contact
 details, defensive local preferences, scroll reveals and a Back-to-Top Button.
 
+### IMARA / STUDIO — Boutique Women's Strength & Movement
+Collection 2's fifth template. A warm editorial berry, lime, clay and parchment
+identity for a women-led boutique studio in Kampala. The site combines coached
+strength, small-group conditioning, mobility, community programming and three
+transparent membership tiers. Its signature Session Composer recommends a
+practical workout from the visitor's focus, available energy and time. Ten
+fresh source-pack images are embedded as WebP and do not overlap the image sets
+used by the first four Collection 2 templates. The template includes responsive
+light/dark modes, eight languages including Swahili and Arabic RTL, fictional
+Ugandan contact details, defensive local preferences, scroll reveals and a
+Back-to-Top Button.
+
 ---
 
 ## 3. IMPORTANT — IMAGE LICENSING
 
-**None of the photography in these four templates has confirmed commercial
+**None of the photography in this repository has confirmed commercial
 redistribution rights.** The images came from a personal reference/moodboard
 collection, not original photography, and in several cases known stock or
 brand-watermarked images were identified and excluded during the build (see
