@@ -13,7 +13,11 @@ business models using the dedicated `Fitness and Gym.zip` source pack.
 | **BARWORKS** | Strength & Powerlifting Gym | `barworks-index.html` |
 | **PACELINE** | Running & Endurance Club | `paceline-index.html` |
 
-The root page is the collection gateway and links to every live template.
+The root page is the collection gateway and links to every live template. It
+uses real imagery drawn from the templates, supports the full eight-language
+workflow (including Swahili and Arabic RTL), follows the visitor's system theme
+with a manual override, and includes an interactive template finder for
+filtering the collection by fitness direction.
 
 ## Collection 2 — Expansion
 
