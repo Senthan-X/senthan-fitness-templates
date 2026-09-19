@@ -23,7 +23,7 @@ The root page is the collection gateway and links to every live template.
 4. **FORM / DAILY** — fitness, nutrition and habit coaching (live)
 5. **IMARA / STUDIO** — boutique women's strength and movement studio (live)
 6. **KASI / LAB** — recovery and athletic-performance facility (live)
-7. Everyday fitness and lifestyle brand
+7. **JUA / CLUB** — everyday fitness and lifestyle brand (live)
 
 These directions deliberately fill gaps left by Collection 1. They are not
 replacement versions of IRONYARD, STILLWATER, BARWORKS or PACELINE.
@@ -45,7 +45,8 @@ senthan-fitness-templates/
 ├── collection-2-amp-house-index.html <- Collection 2 / group training studio
 ├── collection-2-form-daily-index.html <- Collection 2 / nutrition and habit coaching
 ├── collection-2-imara-studio-index.html <- Collection 2 / boutique women's fitness
-└── collection-2-kasi-lab-index.html <- Collection 2 / recovery and performance
+├── collection-2-kasi-lab-index.html <- Collection 2 / recovery and performance
+└── collection-2-jua-club-index.html <- Collection 2 / everyday fitness lifestyle
 ```
 
 Each template is a complete, standalone site — HTML, CSS, JS, images
@@ -151,6 +152,18 @@ as WebP and do not overlap the image sets used by the first five Collection 2
 templates. The template includes responsive light/dark modes, eight languages
 including Swahili and Arabic RTL, fictional Rwandan contact details, defensive
 local preferences, scroll reveals and a Back-to-Top Button.
+
+### JUA / CLUB — Everyday Fitness & Lifestyle
+Collection 2's seventh and final template. A warm sun-orange, lime, sky-blue
+and deep-forest identity for an inclusive Kampala movement club that connects
+useful strength, mobility, playful conditioning, outdoor sessions and social
+club life. Its signature Move Match responds to the visitor's mood, preferred
+setting and available time with a practical same-day activity. Eleven fresh
+source-pack images are embedded as WebP; none appeared in the first six
+Collection 2 templates. The template includes responsive system-aware
+light/dark modes, eight languages including Swahili and Arabic RTL, fictional
+Ugandan contact details, defensive local preferences, scroll reveals and a
+Back-to-Top Button.
 
 ---
 
