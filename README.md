@@ -22,7 +22,7 @@ The root page is the collection gateway and links to every live template.
 3. **AMP / HOUSE** — group-training and HIIT studio (live)
 4. **FORM / DAILY** — fitness, nutrition and habit coaching (live)
 5. **IMARA / STUDIO** — boutique women's strength and movement studio (live)
-6. Recovery and athletic-performance facility
+6. **KASI / LAB** — recovery and athletic-performance facility (live)
 7. Everyday fitness and lifestyle brand
 
 These directions deliberately fill gaps left by Collection 1. They are not
@@ -44,7 +44,8 @@ senthan-fitness-templates/
 ├── collection-2-axis-one-index.html <- Collection 2 / personal coaching
 ├── collection-2-amp-house-index.html <- Collection 2 / group training studio
 ├── collection-2-form-daily-index.html <- Collection 2 / nutrition and habit coaching
-└── collection-2-imara-studio-index.html <- Collection 2 / boutique women's fitness
+├── collection-2-imara-studio-index.html <- Collection 2 / boutique women's fitness
+└── collection-2-kasi-lab-index.html <- Collection 2 / recovery and performance
 ```
 
 Each template is a complete, standalone site — HTML, CSS, JS, images
@@ -139,6 +140,17 @@ used by the first four Collection 2 templates. The template includes responsive
 light/dark modes, eight languages including Swahili and Arabic RTL, fictional
 Ugandan contact details, defensive local preferences, scroll reveals and a
 Back-to-Top Button.
+
+### KASI / LAB — Recovery & Athletic Performance
+Collection 2's sixth template. A technical cobalt, signal-orange and ice-blue
+identity for a fictional Kigali performance facility connecting readiness,
+movement preparation, athletic development and deliberate recovery. Its
+signature Recovery Protocol Builder responds to the visitor's current state,
+next hard session and available time. Nine fresh source-pack images are embedded
+as WebP and do not overlap the image sets used by the first five Collection 2
+templates. The template includes responsive light/dark modes, eight languages
+including Swahili and Arabic RTL, fictional Rwandan contact details, defensive
+local preferences, scroll reveals and a Back-to-Top Button.
 
 ---
 
