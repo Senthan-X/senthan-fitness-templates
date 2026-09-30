@@ -54,10 +54,11 @@ senthan-fitness-templates/
 ```
 
 Each template is a complete, standalone site — HTML, CSS, JS, images
-(base64-embedded), and its full language set in one file. Collection 2 uses the
-updated eight-language workflow from FORM / DAILY onward, adding Swahili to
-English, Spanish, French, German, Portuguese, Arabic and Chinese. Nothing else
-needs to be uploaded for an individual template to work.
+(base64-embedded), and its full language set in one file. All eleven templates support eight languages: English, Spanish, French,
+German, Portuguese, Arabic with RTL, Chinese and Swahili. Nothing else needs
+to be uploaded for an individual template to work. All theme pages provide
+keyboard-accessible close-up previews for embedded imagery; all 11 themes
+use full-background hero imagery with responsive overlays and focal positioning.
 
 ---
 
@@ -88,9 +89,10 @@ the other three (there wasn't enough fresh running-specific photography in
 the original upload batch). Full explanation in this template's own README.
 
 **Shared across all four:** dark/light theme toggle (icon-based sun/moon
-switch), 7 languages (English, Spanish, French, German, Arabic with full RTL,
-Portuguese, Chinese Simplified — 79/79 translation keys verified per
-template), fully responsive layout, scroll-reveal animations, and CSS
+switch), 8 languages (English, Spanish, French, German, Arabic with full RTL,
+Portuguese, Chinese Simplified and Swahili; 79/79 translation keys verified per
+template), fully responsive layout, scroll-reveal animations, close-up image
+previews for embedded gallery imagery, a Back-to-Top Button, and CSS
 custom-property theming that lets you re-color an entire site by changing
 one variable.
 
@@ -99,7 +101,7 @@ Collection 2's first template. Mineral-black, rust and electric-lime art
 direction for a Kampala club combining strength, conditioning, mobility,
 recovery, coaching, class schedules and three membership tiers. It uses ten
 distinct images from the dedicated `Fitness and Gym.zip` source pack and
-includes responsive layouts, light/dark modes, seven languages with Arabic
+includes responsive layouts, light/dark modes, eight languages with Arabic
 RTL, defensive local preferences, scroll reveals and a Back-to-Top Button.
 
 ### AXIS / ONE — Personal Coaching
@@ -110,7 +112,7 @@ transparent coaching plans and fictional Ugandan contact details. Its signature
 interactive focus planner generates a sample training week from the visitor's
 primary goal. Ten fresh archive images are embedded as WebP and do not overlap
 the KINTU image set. The template also includes responsive light/dark modes,
-seven languages with Arabic RTL, defensive local preferences, scroll reveals
+eight languages with Arabic RTL, defensive local preferences, scroll reveals
 and a Back-to-Top Button.
 
 ### AMP / HOUSE — Group Training & HIIT Studio
@@ -120,7 +122,7 @@ formats, a weekly timetable and three transparent pass options, plus a
 signature class mixer that recommends a session from the visitor's preferred
 duration and energy. Nine fresh archive images are embedded as WebP and do not
 overlap the KINTU or AXIS / ONE image sets. The template also includes
-responsive light/dark modes, seven languages with Arabic RTL, fictional
+responsive light/dark modes, eight languages with Arabic RTL, fictional
 Ugandan contact details, defensive local preferences, scroll reveals and a
 Back-to-Top Button.
 

@@ -317,6 +317,23 @@ html[data-theme="light"] .theme-toggle .icon-sun{display:block;}
 
 /* ============ RTL ADJUSTMENTS ============ */
 html[dir="rtl"] .stat-strip{border-top:1px solid rgba(246,242,231,.2);}
+
+/* Accessible embedded-image close-up viewer */
+main img:not([aria-hidden="true"]){cursor:zoom-in}
+.hero::after,.hero-media::after,.hero-bg::after,.hero-art::after,.hero-visual::after{pointer-events:none}
+main img.sc-preview-focus:focus-visible{outline:3px solid var(--ember,var(--acid,#c9f43a));outline-offset:3px}
+.sc-image-viewer{width:min(1000px,calc(100vw - 28px));max-width:none;max-height:calc(100svh - 28px);padding:clamp(12px,2vw,22px);border:1px solid var(--line,rgba(255,255,255,.22));border-radius:18px;background:var(--panel,var(--bg,#151515));color:var(--ink,var(--text,#fff));box-shadow:0 24px 90px #0009}
+.sc-image-viewer::backdrop{background:rgba(7,9,8,.82);backdrop-filter:blur(5px)}
+.sc-image-viewer figure{display:grid;gap:12px;margin:0;justify-items:center}
+.sc-image-viewer img{display:block;width:auto;max-width:100%;height:auto;max-height:min(78svh,900px);object-fit:contain;cursor:zoom-out}
+.sc-image-viewer figcaption{max-width:100%;color:var(--muted,#b8b8b8);font:500 13px/1.5 var(--body,inherit);text-align:center}
+.sc-image-viewer-close{position:absolute;inset-block-start:10px;inset-inline-end:10px;width:42px;height:42px;border:1px solid var(--line,rgba(255,255,255,.24));border-radius:50%;background:var(--bg,var(--paper,#111));color:var(--ink,var(--text,#fff));font:700 24px/1 system-ui;cursor:pointer}
+.sc-image-viewer-close:focus-visible{outline:3px solid var(--ember,var(--acid,#c9f43a));outline-offset:3px}
+.sc-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.sc-back-top{position:fixed;right:20px;bottom:20px;z-index:80;width:48px;height:48px;border:1px solid var(--line,rgba(0,0,0,.18));border-radius:50%;background:var(--ember,var(--acid,#c9f43a));color:var(--ink,var(--bg,#111));font:800 22px/1 system-ui;cursor:pointer;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .22s,transform .22s}
+.sc-back-top.is-visible{opacity:1;transform:none;pointer-events:auto}
+.sc-back-top:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.sc-back-top{transition:none}}
 </style>
 </head>
 <body>
@@ -594,7 +611,7 @@ html[dir="rtl"] .stat-strip{border-top:1px solid rgba(246,242,231,.2);}
         <h4 data-i18n="footer.contact.title">Contact</h4>
         <p>12 Kacyiru Lane, Kigali, Rwanda — demo address</p>
         <p>hello@stillwater-demo.com</p>
-        <p>+1 (555) 010-3366</p>
+        <p>+250 788 555 216</p>
       </div>
       <div>
         <h4 data-i18n="footer.links.title">Quick Links</h4>
@@ -605,7 +622,7 @@ html[dir="rtl"] .stat-strip{border-top:1px solid rgba(246,242,231,.2);}
     </div>
     <div class="footer-bottom">
       <span data-i18n="footer.copyright">© 2026 STILLWATER. All rights reserved.</span>
-      <span>Crafted by <a href="mailto:hello@senthan-co.example">Senthan &amp; Co</a> · +256 700 000 000</span>
+      <span>Crafted by Senthan &amp; Co</span>
     </div>
   </div>
 </footer>
@@ -707,6 +724,45 @@ function applyLanguage(lang){
     });
   }, {threshold:0.15, rootMargin:'0px 0px -60px 0px'});
   els.forEach(function(el){ obs.observe(el); });
+})();
+</script>
+
+<button class="sc-back-top" id="scBackTop" type="button" aria-label="Back-to-Top Button" title="Back-to-Top Button">↑</button>
+<dialog class="sc-image-viewer" id="scImageViewer" aria-labelledby="scViewerTitle">
+  <button class="sc-image-viewer-close" type="button" id="scViewerClose" aria-label="Close image preview">×</button>
+  <span class="sc-sr-only" id="scViewerTitle">Image preview</span>
+  <figure><img id="scViewerImage" alt=""><figcaption id="scViewerCaption"></figcaption></figure>
+</dialog>
+<script>
+(function(){
+  var labels={
+    en:{open:'Open image preview',title:'Image preview',close:'Close image preview',back:'Back-to-Top Button'},
+    es:{open:'Abrir vista previa de imagen',title:'Vista previa de imagen',close:'Cerrar vista previa de imagen',back:'Volver arriba'},
+    fr:{open:'Ouvrir l’aperçu de l’image',title:'Aperçu de l’image',close:'Fermer l’aperçu de l’image',back:'Retour en haut'},
+    de:{open:'Bildvorschau öffnen',title:'Bildvorschau',close:'Bildvorschau schließen',back:'Nach oben'},
+    pt:{open:'Abrir pré-visualização da imagem',title:'Pré-visualização da imagem',close:'Fechar pré-visualização da imagem',back:'Voltar ao topo'},
+    ar:{open:'افتح معاينة الصورة',title:'معاينة الصورة',close:'أغلق معاينة الصورة',back:'العودة إلى الأعلى'},
+    zh:{open:'打开图片预览',title:'图片预览',close:'关闭图片预览',back:'返回顶部'},
+    sw:{open:'Fungua hakikisho la picha',title:'Hakikisho la picha',close:'Funga hakikisho la picha',back:'Rudi juu'}
+  };
+  var dialog=document.getElementById('scImageViewer');
+  if(!dialog)return;
+  var preview=document.getElementById('scViewerImage');
+  var caption=document.getElementById('scViewerCaption');
+  var title=document.getElementById('scViewerTitle');
+  var close=document.getElementById('scViewerClose');
+  function ui(){var key=(document.documentElement.lang||'en').toLowerCase().slice(0,2);return labels[key]||labels.en}
+  function localize(){var t=ui();title.textContent=t.title;close.setAttribute('aria-label',t.close);document.querySelectorAll('main img').forEach(function(img){if(img.closest('[aria-hidden="true"]'))return;img.classList.add('sc-preview-focus');img.setAttribute('tabindex','0');img.setAttribute('role','button');img.setAttribute('aria-haspopup','dialog');img.setAttribute('aria-label',t.open)});document.querySelectorAll('.sc-back-top,.back,.backtop,.back-top,.top,.top-btn').forEach(function(top){top.setAttribute('aria-label',t.back);top.setAttribute('title',t.back)})}
+  function open(img){var t=ui();preview.src=img.currentSrc||img.src;preview.alt=img.alt||t.title;caption.textContent=img.alt||t.title;localize();if(!dialog.open)dialog.showModal()}
+  document.addEventListener('click',function(e){var img=e.target.closest&&e.target.closest('main img');if(!img||img.closest('[aria-hidden="true"]'))return;e.preventDefault();e.stopPropagation();open(img)},true);
+  document.addEventListener('keydown',function(e){var img=e.target.closest&&e.target.closest('main img');if(img&&(e.key==='Enter'||e.key===' ')){e.preventDefault();open(img)}});
+  close.addEventListener('click',function(){dialog.close()});
+  preview.addEventListener('click',function(){dialog.close()});
+  dialog.addEventListener('click',function(e){if(e.target===dialog)dialog.close()});
+  dialog.addEventListener('close',function(){preview.removeAttribute('src')});
+  var top=document.querySelector('.sc-back-top');if(top){var update=function(){top.classList.toggle('is-visible',window.scrollY>420)};window.addEventListener('scroll',update,{passive:true});top.addEventListener('click',function(){window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})});update()}
+  new MutationObserver(localize).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+  localize();
 })();
 </script>
 </body>
